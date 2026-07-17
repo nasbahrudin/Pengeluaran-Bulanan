@@ -300,8 +300,11 @@
         <optgroup label="Tanpa estimasi (catat saja)">
           <option value="jajan">Jajan & Rokok</option>
           <option value="rumahtangga">Rumah Tangga</option>
-          <option value="kasih">Lain-lain / Kasih</option>
+         <option value="kasih">Lain-lain / Kasih</option>
         </optgroup>
+        <optgroup label="Bisnis (di luar rumah tangga)">
+          <option value="bisnis">Bisnis / Trading</option>
+        </optgroup>  
       </select>
       <input type="date" id="q-date" />
       <button class="quick-add" onclick="addQuick()">Tambah</button>
@@ -434,6 +437,7 @@ const CATEGORIES = {
   jajan:       { label:'Jajan & Rokok',  color:'#7A4F10', varKeys:[] },
   rumahtangga: { label:'Rumah Tangga',   color:'#5C6B5A', varKeys:[] },
   kasih:       { label:'Lain-lain / Kasih', color:'#7A2D4E', varKeys:[] },
+  bisnis:      { label:'Bisnis / Trading', color:'#334155', varKeys:[] },
   uncat:       { label:'Belum dikategorikan', color:'#9C9590', varKeys:[] },
 };
 const catLabel = c => (CATEGORIES[c] ? CATEGORIES[c].label : c);
